@@ -68,11 +68,5 @@ import IPython.display
 
 IPython.display.Audio("media/bass-clarinet_A2_05_forte_normal.mp3")
 
-IPython.display.Video("media/velocity cancellation.mp4", embed=True)
-
-IPython.display.HTML("""
-    <video alt="test" controls>
-        <source src="media/velocity cancellation.mp4" type="video/mp4">
-    </video>
-""")
+IPython.display.Video("media/velocity cancellation.mp4", embed = True)
 
