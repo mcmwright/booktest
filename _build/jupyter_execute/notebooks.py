@@ -68,3 +68,5 @@ import IPython.display
 
 IPython.display.Audio(filename="media/bass-clarinet_A2_05_forte_normal.mp3")
 
+IPython.display.Video("media/velocity cancellation.mp4")
+
