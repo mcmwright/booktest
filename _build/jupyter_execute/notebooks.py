@@ -66,7 +66,9 @@ with your book. For more information about this, see [the Jupyter Book documenta
 
 import IPython.display
 
-IPython.display.Audio(filename="media/bass-clarinet_A2_05_forte_normal.mp3")
+IPython.display.Audio("media/bass-clarinet_A2_05_forte_normal.mp3")
+
+IPython.display.Video("media/velocity cancellation.mp4")
 
 IPython.display.HTML("""
     <video alt="test" controls>
