@@ -4,15 +4,15 @@
 # # Content with notebooks
 # 
 # You can also create content with Jupyter Notebooks. This means that you can include
-# code blocks and their outputs in your book. Test.
+# code blocks and their outputs in your book.
 # 
 # ## Markdown + notebooks
 # 
 # As it is markdown, you can embed images, HTML, etc into your posts!
 # 
-# ![](https://myst-parser.readthedocs.io/en/latest/_static/logo.png)
+# ![](https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg)
 # 
-# You an also $add_{math}$ and
+# You can also $add_{math}$ and
 # 
 # $$
 # math^{blocks}
@@ -69,32 +69,8 @@ custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),
 
 fig, ax = plt.subplots(figsize=(10, 5))
 lines = ax.plot(data)
-#ax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);
+ax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);
 
 
 # There is a lot more that you can do with outputs (such as including interactive outputs)
-# with your book. For more information about this, see [the Jupyter Book documentation](https://executablebooks.github.io/cli/start/overview.html)
-
-# In[3]:
-
-
-import IPython.display
-
-
-# In[4]:
-
-
-IPython.display.Audio("media/bass-clarinet_A2_05_forte_normal.mp3")
-
-
-# In[5]:
-
-
-IPython.display.Video("media/velocity cancellation.mp4", embed = True)
-
-
-# In[ ]:
-
-
-
-
+# with your book. For more information about this, see [the Jupyter Book documentation](https://jupyterbook.org)
