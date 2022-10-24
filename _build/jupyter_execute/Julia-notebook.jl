@@ -5,14 +5,14 @@ using Plots
     x, y, i = cp.args
     n = length(x)
     inds = circshift(1:n, 1 - i)
-    linewidth --> range(0, 10, length = n)
+    linewidth --> range(0, 20, length = n)
     seriesalpha --> range(0, 1, length = n)
     aspect_ratio --> 1
     label --> false
     x[inds], y[inds]
 end
 
-n = 150
+n = 200
 t = range(0, 2π, length = n)
 x = sin.(t)
 y = cos.(t)
@@ -22,7 +22,5 @@ anim = @animate for i ∈ 1:n
 end;
 
 gif(anim, "anim_fps15.gif", fps = 15, show_msg = false)
-
-? gif
 
 
